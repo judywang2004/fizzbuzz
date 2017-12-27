@@ -128,5 +128,5 @@
 		<module>fb-webapp</module>
 	</modules>
 
-	<description>fizz buzz rest service</description>
+	<description>fizz buzz rest service</description>	
 </project>

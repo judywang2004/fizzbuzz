@@ -1,12 +1,13 @@
 package com.fb.service.impl;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.stream.IntStream;
 
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fb.service.FizzBuzzService;
-import com.google.common.collect.Lists;
 
 
 @Service
@@ -18,12 +19,19 @@ public class FizzBuzzServiceImpl implements FizzBuzzService {
 
     // API
 
-    // get/find
-
     @Override
-    public List<String> findAll(final long input) {
-        List<String> results = Lists.newArrayList("1","2","3");
-        return results;
+    public HashMap<String, List<Integer>> findAll(int input) {
+    	
+    	FizzBuzzFactory fb = new FizzBuzzFactory();
+    	fb.clearall();
+    	
+    	  IntStream.rangeClosed(0, input).mapToObj(
+		            i -> i % 3 == 0 ?
+		                    (i % 5 == 0 ? fb.getResult("Fizzbuzz", i) : fb.getResult("Fizz", i)) :
+		                    (i % 5 == 0 ? fb.getResult("Buzz", i) : i))
+		            .forEach(System.out::println);
+		    
+    	return fb.res2;
     }
 
    

@@ -1,12 +1,13 @@
 package com.fb.service;
 
+import java.util.HashMap;
 import java.util.List;
 
-public interface FizzBuzzService <T> {
+public interface FizzBuzzService<T>{
 	
 	/**
-     * - contract: if nothing is found, an empty list will be returned to the calling client <br>
+     * - contract: if nothing is found, an empty map will be returned to the calling client <br>
      */
-    List<T> findAll(final long id);
+	HashMap<String, List<Integer>> findAll(final int id);
 
 }
