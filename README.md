@@ -24,8 +24,14 @@ HTTP GET - http://localhost:8080/fizzbuzz/15
 {"Fizz": [3, 6, 9, 12],"Buzz": [5, 10],"FizzBuzz": [15]}
 
 
+
+
 TODO :
 1: Angular - client side
+
 2: Testing - mokito , controller testing
+
 3: Better Response error handling
+
 4: Jenkins
+
