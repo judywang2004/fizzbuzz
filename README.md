@@ -16,3 +16,9 @@ A small web application that can do fizzbuzz as a web service.
   -- tested and it's thread safe
     
 4: Code should be delivered as a standalone deliverable with instructions on how to run.
+
+Sample request and results:
+Sample response
+HTTP GET - http://localhost:8080/fizzbuzz/15
+  
+{"Fizz": [3, 6, 9, 12],"Buzz": [5, 10],"FizzBuzz": [15]}
