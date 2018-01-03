@@ -30,7 +30,7 @@ TODO :
 
 1: Angular - client side
 
-2: Testing - mokito , controller testing
+2: Testing - mockito , controller testing
 
 3: Better Response error handling
 
