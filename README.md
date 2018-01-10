@@ -25,14 +25,3 @@ HTTP GET - http://localhost:8080/fizzbuzz/15
 
 
 
-
-TODO :
-
-1: Angular - client side
-
-2: Testing - mockito , controller testing
-
-3: Better Response error handling
-
-4: Jenkins
-
