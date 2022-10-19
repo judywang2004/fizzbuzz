@@ -1,4 +1,4 @@
-# Fizzbuzz (thread safe)
+# Fizzbuzz
 A small web application that can do fizzbuzz as a web service.
 
 1: Non integer path parameters should result in an error.
